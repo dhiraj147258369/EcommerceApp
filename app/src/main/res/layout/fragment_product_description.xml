@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ProductDescriptionFragment">
+
+  <TextView
+      android:id="@+id/tv_product_description"
+      android:textColor="@color/black"
+      android:text="dsjvbh sdvbfdfvivhb idbvhsb  eisaubfcdb dsjvbh sdvbfdfvivhb idbvhsb  eisaubfcdbdsjvbh sdvbfdfvivhb idbvhsb  eisaubfcdbdsjvbh sdvbfdfvivhb idbvhsb  eisaubfcdbdsjvbh sdvbfdfvivhb idbvhsb  eisaubfcdbdsjvbh sdvbfdfvivhb idbvhsb  eisaubfcdbdsjvbh sdvbfdfvivhb idbvhsb  eisaubfcdbdsjvbh sdvbfdfvivhb idbvhsb  eisaubfcdbdsjvbh sdvbfdfvivhb idbvhsb  eisaubfcdbdsjvbh sdvbfdfvivhb idbvhsb  eisaubfcdbdsjvbh sdvbfdfvivhb idbvhsb  eisaubfcdbdsjvbh sdvbfdfvivhb idbvhsb  eisaubfcdbdsjvbh sdvbfdfvivhb idbvhsb  eisaubfcdbdsjvbh sdvbfdfvivhb idbvhsb  eisaubfcdb"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+</RelativeLayout>

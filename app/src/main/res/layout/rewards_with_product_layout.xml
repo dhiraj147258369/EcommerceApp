@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/reward_gradient_background"
+    android:layout_marginVertical="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+       android:layout_marginTop="16dp"
+        app:tint="@color/white"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/ic_orders" />
+    <TextView
+        android:id="@+id/reward_title"
+        android:layout_toRightOf="@id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="TITLE" />
+
+
+    <TextView
+        android:id="@+id/reward_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/reward_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="gmfwo reogvnfei evodri nigr erino wef " />
+
+</RelativeLayout>

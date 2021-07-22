@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".ProductDetailsActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            app:titleTextColor="@color/black"
+            android:background = "@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_above="@id/ssss"
+        android:layout_below="@id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/product_images_layout" />
+        <include layout="@layout/rewards_with_product_layout"/>
+        <include layout="@layout/product_description_layout"/>
+        <include layout="@layout/product_details_only_layout"/>
+        <include layout="@layout/ratings_layout"/>
+    </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+         android:id="@+id/ssss"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:id="@+id/add_to_cart_btn"
+            android:layout_weight="1"
+            android:background ="#4CAF50"
+            android:layout_width="200dp"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="ADD TO CART "
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buy_now_btn"
+            android:layout_weight="1"
+            android:background ="#FF5722"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="BUY NOW"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

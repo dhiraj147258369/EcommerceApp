@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="HomeFragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/testing_rec_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ScrollView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/sliding_ad_layout"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xx"
+                android:layout_below="@+id/ss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/horizontal_scroll_layout"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vv"
+                android:layout_below="@id/xx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/grid_product_layout"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/vv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/strip_ad_layout"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/no_internet_connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/retry_btn"
+        android:text="Retry"
+        android:layout_margin="20dp"
+        android:layout_below="@id/no_internet_connection"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

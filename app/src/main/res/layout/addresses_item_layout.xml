@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:background="#80D8FF"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/fullnamee"
+        android:layout_margin="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fullname" />
+
+    <TextView
+        android:id="@+id/full_address"
+        android:layout_margin="4dp"
+
+        android:layout_below="@+id/fullnamee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="full address" />
+
+    <TextView
+        android:id="@+id/pincodee"
+        android:layout_margin="4dp"
+        android:layout_below="@+id/full_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pinocde" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:padding="16dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/option_container"
+        android:visibility="gone"
+        android:background="@color/grey"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+         <TextView
+             android:text="Edit"
+             android:paddingHorizontal="8dp"
+             android:paddingTop="4dp"
+             android:paddingBottom="2dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Remove"
+            android:paddingHorizontal="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

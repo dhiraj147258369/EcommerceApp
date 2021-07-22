@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_margin="8dp"
+        android:src="@drawable/phone_front"
+        android:layout_width="80dp"
+        android:layout_height="130dp"/>
+
+    <TextView
+        android:id="@+id/product_title"
+        android:layout_toRightOf="@id/product_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:text="REDMI NOTE 7(BLACK)" />
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_toRightOf="@id/product_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_below="@id/product_title"
+        android:text="Rs.18999/-" />
+
+    <TextView
+        android:id="@+id/qty"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/black"
+        android:padding="4dp"
+        android:background="@drawable/border_background"
+        android:text="Qty: 1"/>
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="match_parent"
+        android:layout_below="@id/product_image"
+        android:layout_margin="2dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <ImageView
+        android:id="@+id/ordered_indicator"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/divider7"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/default_dot"
+        app:tint="@color/grey" />
+
+    <ProgressBar
+        android:id="@+id/progressBar6"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:layout_alignBottom="@id/ordered_indicator"
+        android:layout_marginBottom="-21dp"
+        android:progress="0"
+        android:progressBackgroundTint="@color/grey"
+        android:progressTint="@color/green"
+        android:rotation="90"
+        android:layout_marginLeft="1dp"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <TextView
+        android:id="@+id/ordered_title"
+        android:text="ORDERED"
+        android:layout_toRightOf="@id/ordered_indicator"
+        android:layout_below="@id/divider7"
+        android:layout_marginTop="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/ordered_date"
+        android:text="DATE"
+        android:layout_toRightOf="@id/ordered_title"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/divider7"
+        android:layout_marginTop="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/ordered_body"
+        android:text="Your product is ordered."
+        android:layout_toRightOf="@id/ordered_indicator"
+        android:layout_below="@id/ordered_title"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/progressBar6"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/default_dot"
+        app:tint="@color/grey" />
+
+    <ProgressBar
+        android:id="@+id/progressBar7"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:layout_alignBottom="@id/img2"
+        android:layout_marginBottom="-21dp"
+        android:progress="0"
+        android:progressBackgroundTint="@color/grey"
+        android:progressTint="@color/green"
+        android:layout_marginLeft="1dp"
+        android:rotation="90"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <TextView
+        android:id="@+id/packed_title"
+        android:text="PACKED"
+        android:layout_toRightOf="@id/ordered_indicator"
+        android:layout_below="@id/ordered_body"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/packed_date"
+        android:text="DATE"
+        android:layout_toRightOf="@id/packed_title"
+        android:layout_below="@id/ordered_body"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/packed_body"
+        android:text="Your product is packed."
+        android:layout_toRightOf="@id/ordered_indicator"
+        android:layout_below="@id/packed_title"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/progressBar7"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/default_dot"
+        app:tint="@color/grey" />
+    <ProgressBar
+        android:id="@+id/progressBar8"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:layout_alignBottom="@id/img3"
+        android:layout_marginBottom="-21dp"
+        android:layout_marginLeft="1dp"
+        android:progress="0"
+        android:progressBackgroundTint="@color/grey"
+        android:progressTint="@color/green"
+        android:rotation="90"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/progressBar8"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/default_dot"
+        app:tint="@color/grey" />
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="match_parent"
+        android:layout_below="@id/img4"
+        android:layout_margin="2dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:id="@+id/rate_now_container"
+        android:layout_below="@id/divider8"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img31"
+            android:src="@drawable/ic_star"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:tint ="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <ImageView
+            android:id="@+id/img32"
+            android:src="@drawable/ic_star"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:tint ="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <ImageView
+            android:id="@+id/img33"
+            android:src="@drawable/ic_star"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:tint ="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <ImageView
+            android:id="@+id/img34"
+            android:src="@drawable/ic_star"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:tint ="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <ImageView
+            android:id="@+id/img35"
+            android:src="@drawable/ic_star"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:tint ="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

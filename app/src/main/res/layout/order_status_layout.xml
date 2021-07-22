@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/dd"
+        android:text="YOUR CURRENT ORDER STATUS"
+        android:layout_margin="16dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ff"
+        android:layout_below="@id/dd"
+        android:layout_margin="16dp"
+        android:src="@drawable/phone_front"
+        app:civ_border_color="#673AB7"
+        app:civ_border_width="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+    <TextView
+        android:id="@+id/gg"
+        android:layout_below="@id/ff"
+        android:text="OUT FOR DELIVERY"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/gg"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            app:tint="@color/red"
+            android:src="@drawable/default_dot"
+            android:layout_width="8dp"
+            android:layout_height="8dp"/>
+        <ProgressBar
+            android:id="@+id/progressBar9"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:progressBackgroundTint="@color/grey"
+            android:progress="0"
+            android:layout_height="8dp" />
+        <ImageView
+            app:tint="@color/red"
+            android:src="@drawable/default_dot"
+            android:layout_width="8dp"
+            android:layout_height="8dp"/>
+        <ProgressBar
+            android:id="@+id/progressBar92"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:progressBackgroundTint="@color/grey"
+            android:progress="0"
+            android:layout_weight="1"
+            android:layout_height="8dp" />
+        <ImageView
+            app:tint="@color/red"
+            android:src="@drawable/default_dot"
+            android:layout_width="8dp"
+            android:layout_height="8dp"/>
+        <ProgressBar
+            android:id="@+id/progressBar93"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:progressBackgroundTint="@color/grey"
+            android:progress="0"
+            android:layout_weight="1"
+            android:layout_height="8dp" />
+        <ImageView
+            app:tint="@color/red"
+            android:src="@drawable/default_dot"
+            android:layout_width="8dp"
+            android:layout_height="8dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
